@@ -2,5 +2,154 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccccccab;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 14%;
+    margin-right: 10px;
+    margin-left: 10%;
+    margin-top: -6%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #004AAD;
+    font-size: 20px;
+    margin-top: -3.5%;
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    list-style: none;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+a {
+    color: #004AAD;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 25px;
+    margin-right: 1%;
+}
+
+.container button {
+    padding: 5px 25px;
+    border-radius: 12px;
+    font-size:20px;
+    margin-top: -7%;
+    cursor: pointer;
+}
+
+.entrar{
+    border: 2px solid;
+    border-color: #1A9047;
+    color: #1A9047;
+}
+
+.entrar:hover {
+    background-color: #2BC866;
+    color: white;
+    border-color: #2BC866;
+}
+
+.cadastrar{
+    background-color: #1A9047;
+    color: white;
+    border: none;
+}
+
+.cadastrar:hover {
+    background-color: #2BC866;
+    color: white;
+}
+
+.rastreio-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.rastreio-container h2{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 45px;
+    color: #2BC866;
+}
+
+.rastreio-container form{
+    display: flex;
+    align-items: center;
+}
+
+
+.rastreio-container input{
+    margin-right: 6px;
+    padding: 10px;
+    width: 400px;
+    max-width: 800px;
+    border-radius: 3px;
+    border: 1px solid #cccccc7a;
+    text-align: left;
+}
+
+.rastreio-container button{
+    background-color: #808080;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 11px;
+    background-image: url('imagens/ico-botao-entrega.png');
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 30px;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.rastreio-container button:hover {
+    background-color: #2BC866;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    margin-left: 14%;
+    margin-top: 4%;
+}
+
+.conteudo img{
+    width: 80%;
+    height: auto;
 }
