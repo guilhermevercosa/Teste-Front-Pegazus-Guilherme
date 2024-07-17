@@ -1,3 +1,4 @@
+/* Reset de estilos para todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Estilos para o cabeçalho fixo */
 header {
     position: fixed;
     width: 100%;
@@ -14,17 +16,20 @@ header {
     z-index: 1000;
 }
 
-.container{
+/* Container principal com largura total e margens automáticas */
+.container {
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
 }
 
-.logo-container{
+/* Container do logo alinhado verticalmente */
+.logo-container {
     display: flex;
     align-items: center;
 }
 
+/* Estilos para a imagem dentro do cabeçalho */
 header img {
     width: 14%;
     margin-right: 10px;
@@ -32,24 +37,28 @@ header img {
     margin-top: -6%;
 }
 
+/* Estilos para o conteúdo dentro do cabeçalho */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Estilos para o título principal do cabeçalho */
 header h1 {
     color: #004AAD;
     font-size: 20px;
     margin-top: -3.5%;
 }
 
+/* Estilos para o menu de navegação */
 .menu {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para cada item do menu */
 .menu > li {
     list-style: none;
     padding: 8px;
@@ -59,49 +68,62 @@ header h1 {
     font-weight: bold;
 }
 
+/* Estilos para os links no menu */
 a {
     color: #004AAD;
     text-decoration: none;
 }
 
+/* Estilos para a mudança de cor do link no menu ao passar o mouse */
+.menu li a:hover {
+    color: #2BC866;
+}
+
+/* Container para botões com espaçamento entre eles */
 .button-container {
     display: flex;
     gap: 25px;
     margin-right: 1%;
 }
 
+/* Estilos para botões dentro do container */
 .container button {
     padding: 5px 25px;
     border-radius: 12px;
-    font-size:20px;
+    font-size: 20px;
     margin-top: -7%;
     cursor: pointer;
 }
 
-.entrar{
+/* Estilos para o botão de 'Entrar' */
+.entrar {
     border: 2px solid;
     border-color: #1A9047;
     color: #1A9047;
 }
 
+/* Estilos para o botão de 'Entrar' ao passar o mouse */
 .entrar:hover {
     background-color: #2BC866;
     color: white;
     border-color: #2BC866;
 }
 
-.cadastrar{
+/* Estilos para o botão de 'Cadastrar' */
+.cadastrar {
     background-color: #1A9047;
     color: white;
     border: none;
 }
 
+/* Estilos para o botão de 'Cadastrar' ao passar o mouse */
 .cadastrar:hover {
     background-color: #2BC866;
     color: white;
 }
 
-.rastreio-container{
+/* Container para a seção de rastreamento */
+#rastreio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,20 +131,22 @@ a {
     padding: 20px;
 }
 
-.rastreio-container h2{
+/* Estilos para o título da seção de rastreamento */
+#rastreio-container h2 {
     margin-top: 6%;
     margin-bottom: 25px;
     font-size: 45px;
     color: #2BC866;
 }
 
-.rastreio-container form{
+/* Estilos para o formulário de rastreamento */
+#rastreio-container form {
     display: flex;
     align-items: center;
 }
 
-
-.rastreio-container input{
+/* Estilos para o campo de input no formulário de rastreamento */
+#rastreio-container input {
     margin-right: 6px;
     padding: 10px;
     width: 400px;
@@ -132,7 +156,8 @@ a {
     text-align: left;
 }
 
-.rastreio-container button{
+/* Estilos para o botão de submit no formulário de rastreamento */
+#rastreio-container button {
     background-color: #808080;
     color: white;
     text-transform: uppercase;
@@ -148,38 +173,45 @@ a {
     cursor: pointer;
 }
 
-.rastreio-container button:hover {
+/* Estilos para o botão de submit ao passar o mouse */
+#rastreio-container button:hover {
     background-color: #2BC866;
 }
 
-.conteudo{
+/* Container para o conteúdo principal */
+.conteudo {
     display: flex;
     align-items: center;
     margin-left: 14%;
     margin-top: 4%;
 }
 
-.conteudo img{
+/* Estilos para imagens dentro do conteúdo principal */
+.conteudo img {
     width: 80%;
     height: auto;
 }
 
-.sobre-nos{
+/* Estilos para a seção 'Sobre Nós' */
+#sobre-nos {
     text-align: center;
     margin-top: 2%;
 }
 
-.sobre-nos h2{
+/* Estilos para o título da seção 'Sobre Nós' */
+#sobre-nos h2 {
     font-size: 33px;
     color: #2BC866;
 }
 
-.sobre-nos p{
+/* Estilos para o texto da seção 'Sobre Nós' */
+#sobre-nos p {
     margin-top: 30px;
     font-size: 16px;
 }
 
-.beneficios{
+/* Container para os benefícios */
+.beneficios {
     display: flex;
     justify-content: center;
     gap: 150px;
@@ -187,26 +219,31 @@ a {
     margin-top: 3%;
 }
 
-.beneficios li{
+/* Estilos para cada item de benefício */
+.beneficios li {
     list-style: none;
     flex: 0 0 20%;
     text-align: center;
 }
 
-.beneficios img{
+/* Estilos para imagens dentro dos benefícios */
+.beneficios img {
     width: 130px;
 }
 
-.beneficios h3{
+/* Estilos para títulos de benefícios */
+.beneficios h3 {
     color: #2BC866;
     margin-bottom: 20px;
 }
 
-.beneficios p{
+/* Estilos para textos de benefícios */
+.beneficios p {
     font-size: 14px;
 }
 
-.mensagem h2{
+/* Estilos para o título da seção de mensagem */
+.mensagem h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -215,10 +252,11 @@ a {
     max-width: 1000px;
 }
 
-.mensagem button{
+/* Estilos para botões dentro da seção de mensagem */
+.mensagem button {
     padding: 20px 25px;
     border-radius: 8px;
-    font-size:20px;
+    font-size: 20px;
     margin-top: 2%;
     cursor: pointer;
     font-size: 12px;
@@ -228,18 +266,21 @@ a {
     margin-bottom: 10%;
 }
 
-.mensagem button:hover{
+/* Estilos para o botão da seção de mensagem ao passar o mouse */
+.mensagem button:hover {
     background-color: #1A9047;
     color: white;
     border: none;
 }
 
-#parceiros{
+/* Estilos para a seção de parceiros */
+#parceiros {
     background-color: #2BC866;
     padding: 110px;
 }
 
-.container-flex{
+/* Container flexível para a seção de parceiros */
+.container-flex {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -247,31 +288,36 @@ a {
     align-items: center;
 }
 
-.texto-parceiros{
+/* Estilos para textos da seção de parceiros */
+.texto-parceiros {
     flex: 0 0 calc(55% - 35px);
     margin-left: 10%;
 }
 
-.imagem-parceiros{
+/* Estilos para imagens da seção de parceiros */
+.imagem-parceiros {
     flex: 0 0 30%;
     margin-top: -5%;
     margin-right: 7%;
 }
 
-.texto-parceiros h2{
+/* Estilos para o título da seção de parceiros */
+.texto-parceiros h2 {
     color: #ffffff;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.texto-parceiros p{
+/* Estilos para o texto da seção de parceiros */
+.texto-parceiros p {
     color: #ffffff;
     margin-bottom: 20px;
     font-size: 12px;
     width: 90%;
 }
 
-.lista-parceiros{
+/* Estilos para a lista de parceiros */
+.lista-parceiros {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -282,18 +328,142 @@ a {
     margin-top: 30px;
 }
 
-.lista-parceiros{
+/* Estilos para itens da lista de parceiros */
+.lista-parceiros {
     list-style: none;
 }
 
-.lista-parceiros img{
+/* Estilos para imagens da lista de parceiros */
+.lista-parceiros img {
     width: 60px;
     height: auto;
     margin-top: -15%;
     margin-bottom: -20%;
 }
 
-.imagem-parceiros img{
+/* Estilos para imagens da seção de parceiros */
+.imagem-parceiros img {
     width: 100%;
     display: block;
+}
+
+/* Estilos para a seção de ajuda */
+.ajuda-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container para a seção de ajuda */
+.ajuda-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* Estilos para imagens de ajuda */
+.imagem-ajuda img {
+    width: 150%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 50%;
+}
+
+/* Estilos para textos de ajuda */
+.texto-ajuda {
+    flex: 1;
+    margin-left: 22%;
+    color: #2BC866;
+    font-size: 30px;
+}
+
+/* Estilos para textos de ajuda */
+.texto-ajuda p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000;
+}
+
+/* Estilos para a lista de ajuda */
+.lista-ajuda ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 5% 15%;
+}
+
+/* Estilos para itens da lista de ajuda */
+.lista-ajuda li {
+    flex: 1 1 calc(10% - 30px);
+    margin: 10px;
+    padding: 15px 10px 30px;
+    border: 1px solid #2BC866;
+    border-radius: 6px;
+}
+
+/* Estilos para sublistas da lista de ajuda */
+.lista-ajuda li ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0px;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Estilos para títulos da lista de ajuda */
+.lista-ajuda h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2BC866;
+}
+
+/* Estilos para textos da lista de ajuda */
+.lista-ajuda p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Estilos para itens de sublistas da lista de ajuda */
+.lista-ajuda li ul li {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para imagens da lista de ajuda */
+.lista-ajuda img {
+    width: 20%;
+    margin: 15% 0 6% 0;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    background-color: #2BC866;
+    padding: 10px;
+    margin-top: 8%;
+}
+
+/* Estilos para o título do rodapé */
+.rodape h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 7px;
+    font-weight: 100;
+}
+
+/* Estilos para textos do rodapé */
+.rodape p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 7px;
 }
