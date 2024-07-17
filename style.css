@@ -347,6 +347,46 @@ a {
     display: block;
 }
 
+@media (max-width: 1024px) {
+    .texto-parceiros {
+        flex: 0 0 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .imagem-parceiros {
+        flex: 0 0 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .lista-parceiros {
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+/* Media querie para ajustar o layout em telas muito pequenas */
+@media (max-width: 600px) {
+    .texto-parceiros h2 {
+        font-size: 24px;
+    }
+
+    .texto-parceiros p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .imagem-parceiros img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lista-parceiros img {
+        width: 40px;
+    }
+}
+
 /* Estilos para a seção de ajuda */
 .ajuda-section {
     display: flex;
